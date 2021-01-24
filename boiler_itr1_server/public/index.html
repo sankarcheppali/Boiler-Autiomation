@@ -1,0 +1,73 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Boiler Controller</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/bs/css/bootstrap.min.css" rel="stylesheet" >
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="index.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <strong>Boiler Controller</strong>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main role="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+            <div id="temperature_chart_div"></div>
+        </div>
+        <div class="col-md-6">
+            <div id="relay_chart_div"></div>
+        </div>
+      </div>
+      <div class="row mt-4">
+       <div class="col-md-4">
+            <h3>Temperature : <span id="temperature_holder"></span> C</h3>
+            <h3>Boiler : <span id="boiler_status_holder"></span></h3>
+            <button type="button" class="btn btn-primary" id="relayOffBtn">
+                     Switch Off Boiler
+            </button>
+            <button type="button" class="btn btn-success" id="relayOnBtn">
+                     Switch On Boiler
+            </button>
+       </div>
+     </div> 
+</main>
+
+<script src="/bs/js/jqeury.js"></script>
+<script src="/bs/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+ <script src="/mqttws31.min.js" type="text/javascript"></script>
+<script src="/index.js"></script>    
+</body>
+</html>
